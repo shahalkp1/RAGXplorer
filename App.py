@@ -78,7 +78,7 @@ groq_agent = Agent(groq_model,
 
 @groq_agent.tool_plain
 async def websearch_tool(question) -> str:  
-    tavily_client = TavilyClient(api_key="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")
+    tavily_client = TavilyClient(api_key=st.secrets['TVLY-_API_KEY'])
     answer = tavily_client.qna_search(query=question)
     return answer
 
