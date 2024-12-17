@@ -1,0 +1,7 @@
+streamlit
+pydantic==2.6.0
+langchain
+langchain_community
+pypdf
+pathlib
+tavily-python
